@@ -1,0 +1,110 @@
+Textos base pra exercícios:
+	- Ligar para alguém: 
+		"Monte um algoritimo necessário para ligar para um amigo"
+	
+	- Valor por hora:
+		"Escreva um programa que retorna o valor hora de um funcionário com base no seu salário mensal e horas trabalhadas por mês"
+		
+	- Chute um número:
+		"Escreva um programa que, ao iniciar gera um valor aleatório de 1 a 10 e permite que o usuário chute um número até que o valor aleatório gerado no início do programa seja chutado corretamente.
+		O programa deve informar se o chute foi acima, abaixo ou igual ao valor aleatório gerado no início do programa."
+		
+
+Estratégia para montar um algoritimo:
+	- 5 Qs: Analisar criticamente o problema e descobrir
+		1. (Quais são) Os dados de entrada necessários
+		2. O Que devo fazer com esses dados
+		3. (Quais são) As restrições do problema
+		4. (Qual é) O resultado esperado
+		5. (Qual é) A sequência de passos a ser feita para chegar ao resultado esperado
+		
+	Exemplo 01: Ligar para alguém
+		1. - Telefone
+		   - Número de celular
+		2. Usar o celular para discar o número do meu amigo
+		3. Caso meu amigo não atenda, devo deixar uma mensagem dizendo "me ligue de volta"
+		4. Conseguir falar com meu amigo
+		5. - Pegar o telefone
+		   - Se for bloqueado por senha: desbloquear
+		   - Verificar se há sinal da operadora
+		   - Ir até o discador do celular
+		   - Digitar o número do meu amigo
+		   - Apertar o botão "ligar"
+		   - Aguarda a ligação completar
+		   - Se a ligação completar: conversar com meu amigo
+		   - Se a ligação não completar: deixar uma mensagem dizendo "me ligue de volta"
+		   
+	Exemplo 02: Valor por hora
+		1. - Salário mensal
+		   - Horas trabalhadas por mês
+		2. Dividir o salário mensal pelas horas trabalhadas por mês
+		3. Os valores devem ser entregues somente em formato de salário por hora
+		4. Obter o valor por hora do salário
+		5. - Perguntar o salário mensal
+		   - Guardar o valor do salário mensal
+		   - Perguntar as horas trabalhadas por mês
+		   - Guardar o valor das horas trabalhadas por mês
+		   - Realizar o calculo de divisão do salário mensal pelas horas trabalhadas (salário mensal / horas trabalhadas)
+		   - Exibir o resultado
+				--> Pseudocódigo:
+						input salario_mensal
+						input horas_trabalhadas_por_mes
+						valor_hora = salario_mensal / horas_trabalhadas_por_mes
+						print valor_hora
+		   
+	Exemplo 03: Chute um número
+		1. - Um número de 0 a 10
+		   - Um chute do usuário
+		2. - Comparar o número inserido com o número gerado pelo programa
+		   - Se o valor for diferente do esperado: exibir se o número é maior ou menor que o esperado e permitir a inserção de outro valor
+		3. - O usuário pode chutar até acertar o valor
+		   - O usuário pode jogar quantas vezes quiser
+		4. Que o usuário acerte o número gerado pelo programa
+		5. - Gerar um número aleatório de 0 a 10
+		   - Guardar o número aleatório
+		   - Perguntar um valor ao usuário
+		   - Comparar o valor do usuário com o valor gerado pelo programa
+		   - Se o usuário acertar o número: exibir uma mensagem parabenizando
+		   - Se o usuário errar o número: exibir se o número é maior ou menor que o esperado e permitir a inserção de outro valor
+		   
+		   
+**** Variáveis: Informações de tipos diferentes (texto, data, número...) armazenadas na memória ****
+	Exemplo: Valor por hora	
+		- Variável 01: hora
+		- Variável 02: salário mensal
+		- Variável 03: horas trabalhadas por mês
+		
+**** Condicionais: "Questionamentos" ****
+	Exemplo: Chute um número
+		- Condicional 01: Se o número chutado for MENOR que o número gerado
+		- Condicional 02: Se o número chutado for MAIOR que o número gerado
+		- Condicional 03: Se o número chutado for IGUAL que o número gerado
+		
+**** Laços de Repetição: Realização da mesma ação por uma quantidade x de vezes ****
+	- For
+	- Foreach	
+	- While
+	- Do While
+	
+**** Coleções: Multiplos valores armazenados em um só local ****
+	- Listas
+	- Arrays
+	- Filas
+	- ...
+	
+
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
