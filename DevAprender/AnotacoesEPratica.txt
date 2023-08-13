@@ -21,6 +21,9 @@ Textos base pra exercícios:
 	- Soma de valores de uma lista:
 		"Dados uma coleção de dados "idades" (15, 46, 75, 34, 23) imprima na tela a some destes valores"
 		
+	- De 1 a N:
+		"Exiba na tela todos os números de 1 a N"
+		
 		
 
 **** Estratégia para montar um algoritimo: ****
@@ -113,8 +116,9 @@ Textos base pra exercícios:
 		5. - Receber os dados e guardar em uma variável
 		   - Percorrer a lista somando seus valores
 		   - Exibir em tela o resultado da soma
+		   
 		
-------
+		
 		   
 **** Variáveis: Informações de tipos diferentes (texto, data, número...) armazenadas na memória ****
 	Exemplo: Valor por hora	
@@ -143,7 +147,7 @@ Textos base pra exercícios:
 	- Filas
 	- ...
 	
------
+	
 	
 **** Pseudocódigo ****
 	- input: palavra usada para receber dados do usuário
@@ -229,7 +233,9 @@ Textos base pra exercícios:
 				print "você chutou um valor inválido"
 		   
 		   
-		   
+**** Fluxogramas: Representação visual gráfica de um algorítimo ****
+	!!! Anotações em PDF (Fluxograma.pdf) !!!
+
 		   
 		   
 		   
