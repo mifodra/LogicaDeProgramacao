@@ -1,16 +1,29 @@
 Textos base pra exercícios:
 	- Ligar para alguém: 
-		"Monte um algoritimo necessário para ligar para um amigo"
+		"Monte um algoritimo necessário para ligar para um amigo."
 	
 	- Valor por hora:
-		"Escreva um programa que retorna o valor hora de um funcionário com base no seu salário mensal e horas trabalhadas por mês"
+		"Escreva um programa que retorna o valor hora de um funcionário com base no seu salário mensal e horas trabalhadas por mês."
 		
 	- Chute um número:
 		"Escreva um programa que, ao iniciar gera um valor aleatório de 1 a 10 e permite que o usuário chute um número até que o valor aleatório gerado no início do programa seja chutado corretamente.
 		O programa deve informar se o chute foi acima, abaixo ou igual ao valor aleatório gerado no início do programa."
 		
+	- Gerador de boas-vindas:
+		"Crie um programa que pede ao usuário seu nome e depois o dá as boas-vindas dizendo 'X seja bem-vindo', onde X é o nome do usuário."
+		
+	- Exibir o maior do dois números:
+		"Crie um programa que recebe dois valores e exibe qual é o maior entre eles."
+		
+	- Fatorial de um número:
+		"Crie um programa que recebe um número e imprime seu fatorial."
+		
+	- Soma de valores de uma lista:
+		"Dados uma coleção de dados "idades" (15, 46, 75, 34, 23) imprima na tela a some destes valores"
+		
+		
 
-Estratégia para montar um algoritimo:
+**** Estratégia para montar um algoritimo: ****
 	- 5 Qs: Analisar criticamente o problema e descobrir
 		1. (Quais são) Os dados de entrada necessários
 		2. O Que devo fazer com esses dados
@@ -46,11 +59,6 @@ Estratégia para montar um algoritimo:
 		   - Guardar o valor das horas trabalhadas por mês
 		   - Realizar o calculo de divisão do salário mensal pelas horas trabalhadas (salário mensal / horas trabalhadas)
 		   - Exibir o resultado
-				--> Pseudocódigo:
-						input salario_mensal
-						input horas_trabalhadas_por_mes
-						valor_hora = salario_mensal / horas_trabalhadas_por_mes
-						print valor_hora
 		   
 	Exemplo 03: Chute um número
 		1. - Um número de 0 a 10
@@ -66,7 +74,47 @@ Estratégia para montar um algoritimo:
 		   - Comparar o valor do usuário com o valor gerado pelo programa
 		   - Se o usuário acertar o número: exibir uma mensagem parabenizando
 		   - Se o usuário errar o número: exibir se o número é maior ou menor que o esperado e permitir a inserção de outro valor
+	
+	Exemplo 04: Gerado de boas-vindas
+		1. Nome do usuário
+		2. Adicionar o nome do usuário a mensagem 'seja bem-vindo' e exibi-la
+		3. O usuário deve inserir seu nome
+		4. Retornar a mensagem 'X seja bem-vindo' com o nome do usuário no lugar de X
+		5. - Perguntar o nome do usuário
+		   - Retornar a mensagem 
 		   
+	Exemplo 05: Exibir o maior do dois números
+		1. - Primeiro número
+		   - Segundo número
+		2. Comparar ambos os números entre si
+		3. Precisa ter 2 números
+		4. Exibir em tela qual dos números inseridos possui o maior valor
+		5. - Perguntar o primeiro número
+		   - Guardar o primeiro número
+		   - Perguntar o segundo número
+		   - Guardar o segundo número
+		   - Comparar os dois números entre si
+		   - Retornar uma mensagem dizendo qual dos dois valores é o maior
+		   
+	Exemplo 06: Fatorial de um número
+		1. Um número
+		2. Multiplar o número por todos seus antecessores e depois exibir o resultado
+		3. Ter um número inteiro e positivo
+		4. Exibir em tela o fatorial do número inserido
+		5. - Pedir um número ao usuário
+		   - Multiplicar o número menos um até atingir o um (n * n-1)
+		   - Exibir em tela o resultado da multiplicação
+	
+	Exemplo 07: Soma de valores de uma lista
+		1. Lista de idades
+		2. Somar todos os valores da lista e exibir o resultado
+		3. Somar apenas os valores inclusos na lista
+		4. Exibir em tela o resultado da soma de todas as idades
+		5. - Receber os dados e guardar em uma variável
+		   - Percorrer a lista somando seus valores
+		   - Exibir em tela o resultado da soma
+		
+------
 		   
 **** Variáveis: Informações de tipos diferentes (texto, data, número...) armazenadas na memória ****
 	Exemplo: Valor por hora	
@@ -74,11 +122,13 @@ Estratégia para montar um algoritimo:
 		- Variável 02: salário mensal
 		- Variável 03: horas trabalhadas por mês
 		
+		
 **** Condicionais: "Questionamentos" ****
 	Exemplo: Chute um número
 		- Condicional 01: Se o número chutado for MENOR que o número gerado
 		- Condicional 02: Se o número chutado for MAIOR que o número gerado
 		- Condicional 03: Se o número chutado for IGUAL que o número gerado
+		
 		
 **** Laços de Repetição: Realização da mesma ação por uma quantidade x de vezes ****
 	- For
@@ -86,13 +136,97 @@ Estratégia para montar um algoritimo:
 	- While
 	- Do While
 	
+	
 **** Coleções: Multiplos valores armazenados em um só local ****
 	- Listas
 	- Arrays
 	- Filas
 	- ...
 	
+-----
+	
+**** Pseudocódigo ****
+	- input: palavra usada para receber dados do usuário
+	- print: exibir algo
+	- if condição: condicional que controla se algo deve ou não ser feito
+	- else: cláusula a ser executada caso nenhuma condicional if seja executada
+	- loop de X a Y: laço de repetição que irá iterar de X a Y
+	- loop X em Y: laço de repetição que irá iterar X em uma coleção Y
+	- while X: laço de repetição que acontecerá enquanto uma condição for verdadeira
+	
+	Exemplo 01: Valor por hora
+		input salario_mensal
+		input horas_trabalhadas_por_mes
+		valor_hora = salario_mensal / horas_trabalhadas_por_mes
+		print valor_hora
 
+	Exemplo 02: Gerador de boas-vindas
+		input nome_do_usuario
+		print nome_do_usuario + 'seja bem-vindo'
+		
+	Exemplo 03: Exibir o maior do dois números
+		input primeiro_numero
+		input segundo_numero
+		if primeiro_numero > segundo_numero
+			print primeiro_numero
+		else
+			print segundo_numero
+			
+	Exemplo 04: Fatorial de um número
+		input numero
+		fatorial = numero
+		if numero < 0
+			print "digite apenar números positivos"
+			input numero
+		while numero >= 1
+			fatorial = fatorial * numero - 1
+			numero = numero - 1
+		print fatorial
+		
+				OU
+				
+		input numero
+		if numero < 0
+			print "digite apenar números positivos"
+			input numero
+		fatorial = 1
+		loop de 1 a numero
+			fatorial = fatorial * numero
+		print resultado
+		
+	Exemplo 05: Soma de valores de uma lista
+		idades = (15, 46, 75, 34, 23)
+		total = 0
+		loop idade em idades
+			total = total + idade
+		print total
+		
+	Exemplo 06: Chute um número
+		valor_aleatorio
+		input chute
+		while chute != valor_aleatorio
+			if chute > valor_aleatorio
+				print "chute é maior que o valor gerado"
+			else
+				print "chute é menor que o valor gerado"
+			input chute
+		print "acertou o chute"
+				
+				OU
+		
+		valor_aleatorio
+		acertou = falso
+		while acertou = falso
+			input chute
+			if chute > valor_aleatorio
+				print "chute é maior que o valor gerado"
+			if chute < valor_aleatorio
+				print "chute é menor que o valor gerado"
+			if chute = valor_aleatorio
+				print "acertou o chute"
+				acertou = verdadeiro
+			else
+				print "você chutou um valor inválido"
 		   
 		   
 		   
