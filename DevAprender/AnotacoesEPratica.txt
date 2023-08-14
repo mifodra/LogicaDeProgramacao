@@ -23,6 +23,9 @@ Textos base pra exercícios:
 		
 	- De 1 a N:
 		"Exiba na tela todos os números de 1 a N"
+
+	- Medidor de Velocidade:
+		"Levando em consideração a velocidade máxima permitida de 80km em uma determinada rua. Crie um programa que receba do usuário um valor que representa a velocidade e com base nessa velocidade diga se ela tomou uma multa leve, grave ou gravíssima. Levando em consideração que se a pessoa estiver abaixo da velocidade máxima seu programa deve exibir: "não houve multa", caso esteja até 10km acima, deve exibir: "levou multa leve", caso esteja entre 11 a 20km acima da velocidade máxima, exibir: "levou multa grave", e caso esteja 20km acima da velocidade máxima, exiba: "levou multa gravíssima"."
 		
 		
 
@@ -116,6 +119,18 @@ Textos base pra exercícios:
 		5. - Receber os dados e guardar em uma variável
 		   - Percorrer a lista somando seus valores
 		   - Exibir em tela o resultado da soma
+
+	Exemplo 08: Medidor de Velocidade
+		1. Velocidade
+		2. Comparar se a velocidade está menor ou igual, até 10km maior, entre 11km e 20km ou 20+km maior que 80km e exibir as mensagem referentes
+		3. -
+		4. Exibir em tela as mensagem referentes a cada velocidade atingida
+		5. - Pedir a velocidade ao usuário e guardar em uma variável
+		   - Comparar a velocidade com a velocidade permitida
+		   - Se o usuário estiver abaixo de 80km exibir: não houve multa
+		   - Se o usuário estiver entre 81km e 90km exibir: levou multa leve
+		   - Se o usuário estiver entre 91 e 100 exibir: levou multa grave
+		   - Se o usuário estiver acima de 101 exibir: levou multa gravíssima
 		   
 		
 		
@@ -231,6 +246,18 @@ Textos base pra exercícios:
 				acertou = verdadeiro
 			else
 				print "você chutou um valor inválido"
+
+	Exemplo 07: Medidor de Velocidade
+		input velocidade
+		velocidade_maxima = 80
+		if velocidade <= velocidade_maxima
+			print "não houve multa"
+		if velocidade > velocidade_maxima e velocidade <= velocidade_maxima + 10
+			print "levou multa leve"
+		if velocidade > velocidade_maxima + 11 e velocidade <= velocidade_maxima + 20
+			print "levou multa grave"
+		else 
+			print "levou multa gravíssima"
 		   
 		   
 **** Fluxogramas: Representação visual gráfica de um algorítimo ****
