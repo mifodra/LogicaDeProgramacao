@@ -178,12 +178,12 @@ Textos base pra exercícios:
 			
 	Exemplo 04: Fatorial de um número
 		input numero
-		fatorial = numero
 		if numero < 0
 			print "digite apenar números positivos"
 			input numero
-		while numero >= 1
-			fatorial = fatorial * numero - 1
+		fatorial = numero
+		while numero > 1
+			fatorial = fatorial * (numero - 1)
 			numero = numero - 1
 		print fatorial
 		
