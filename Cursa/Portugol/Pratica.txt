@@ -55,3 +55,78 @@ Inicio
     Escreval ("O triângulo é EQUILATERO?", EQ)
     Escreva ("O triângulo é ESCALENO?", ES)
 Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "idade"
+var 
+    ano_atual, ano_nasc, idade: Inteiro
+Inicio
+    Escreva("Em que ano nós estamos? ")
+    Leia(ano_atual)
+    Escreva("Em que ano eu nasci? ")
+    Leia(ano_nasc)
+
+    idade <- ano_atual - ano_nasc
+
+    Escreva("Minha idade será", idade)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "dolar"
+var 
+    reais, dolares: Real
+Inicio
+    Escreva("Quantos Reais eu tenho? R$")
+    Leia(reais)
+
+    dolares <- reais / 4.94
+
+    Escreva("Posso ter US$", dolares)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "fahrenheit"
+var 
+    F, C: Real
+Inicio
+    Escreva("Qual é a temperatura aqui?")
+    Leia(F)
+
+    C <- (F - 32) / 1.8
+
+    Escreva("No Brasil estaria", C)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "imposto"
+var 
+    preco, imposto: Real
+Inicio
+    Escreva("Qual o valor do produto? US$")
+    Leia(preco)
+
+    imposto <- preco * 60 / 100
+
+    Escreva("O imposto será de US$", imposto)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "emprestimo"
+var 
+    emprestimo, valor_total: Real
+    parcelas: Inteiro
+Inicio
+    Escreva("Qual o valor do empréstimo? R$")
+    Leia(emprestimo)
+    Escreva("Quantas parcelas? ")
+    Leia(parcelas)
+
+    valor_total <- (emprestimo * 1.2) / parcelas
+
+    Escreva("Vou pagar", parcelas, " de R$", valor_total)
+Fimalgoritmo

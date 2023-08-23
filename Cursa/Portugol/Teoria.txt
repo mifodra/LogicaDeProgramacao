@@ -75,3 +75,36 @@ var
 Atribuições:
     msg: caractere 
     msg <- "Olá, Mundo!"
+
+Estruturas Condicionais:
+    - Se:
+        Se (expressão) entao
+            bloco
+        FimSe
+    - Senao: (Condicional Composta)
+        Se (expressão) entao
+            bloco A
+        Senao
+            bloco B
+        FimSe
+    - Senao Se: (Condicional Aninhada)
+        Se (expressão) entao
+            bloco A
+        Senao
+            Se (expressão) entao
+                bloco B
+            Senao
+                bloco C
+            FimSe
+        FimSe
+    - Escolha Caso:
+        Escolha (variável)
+            Caso valor
+                bloco A
+            Caso valor
+                bloco B
+            Caso valor
+                bloco C
+            Caso valor
+                bloco D
+        FimEscolha

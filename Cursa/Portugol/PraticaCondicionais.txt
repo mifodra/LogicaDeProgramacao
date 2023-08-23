@@ -1,0 +1,291 @@
+Algoritmo "idade"
+var 
+    ano_atual, ano_nasc, idade: Inteiro
+Inicio
+    Escreva("Em que ano nós estamos? ")
+    Leia(ano_atual)
+    Escreva("Em que ano você nasceu? ")
+    Leia(ano_nasc)
+
+    idade <- ano_atual - ano_nasc
+
+    EscrevaL("Em", ano_atual, " você tera", idade, " anos")
+
+    Se (idade >= 21) entao
+        EscrevaL("E ja tera atingido a maioridade")
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "parOuImpar"
+var 
+    numero: Inteiro
+Inicio
+    Escreva("Diga um número qualquer: ")
+    Leia(numero)
+
+    Se (numero % 2 = 0) então
+        Escreva("Par")
+    Senao
+        Escreva("Impar")
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "IMC"
+var 
+    massa, altura: Real
+Inicio
+    Escreva("Massa (Kg): ")
+    Leia(massa)
+    Escreva("Altura (m): ")
+    Leia(altura)
+
+    imc <- massa / (altura ^ 2)
+
+    Se (im >= 18.5) e (imc < 25) então
+        Escreva("Parabéns, voce esta no seu peso ideial")
+    Senao
+        Escreva("Você não esta na faixa de peso ideal")
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Está apto a dirigir?
+
+Algoritmo "dirigir"
+var 
+    ano_atual, ano_nasc: Inteiro
+Inicio
+    Escreva("Ano Atual (yyyy): ")
+    Leia(ano_atual)
+    Escreva("Ano de Nascimento (yyyy): ")
+    Leia(ano_nasc)
+
+    Se (ano_atual - ano_nasc >= 18) então
+        Escreva("Apto a tirar carteira")
+    Senao
+        Escreva("Inapto a tirar carteira")
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Aluno aprovado ou reprovado?
+
+Algoritmo "aprovadoOuReprovado"
+var 
+    N1, N2, M: Real
+Inicio
+    Escreva("Primeira Nota: ")
+    Leia(N1)
+    Escreva("Segunda Nota: ")
+    Leia(N2)
+
+    M <- (N1 + N2)/2
+
+    Se (M >= 7) então
+        Escreva("Aluno aprovado")
+    Senao
+        Escreva("Aluno reprovado")
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Aluno aprovado, reprovado ou em recuperação?
+
+Algoritmo "aprovadoReprovadoOuRecuperacao"
+var 
+    N1, N2, M: Real
+Inicio
+    Escreva("Primeira Nota: ")
+    Leia(N1)
+    Escreva("Segunda Nota: ")
+    Leia(N2)
+
+    M <- (N1 + N2)/2
+
+    Se (M >= 7) então
+        Escreva("Aluno aprovado")
+    Senao
+        Se (M >= 5) e (M < 7) entao
+            Escreva("Aluno em recuperação")
+        Senao
+            Escreva("Aluno reprovado")
+        FimSe
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+
+Algoritmo "IMC"
+var 
+    massa, altura: Real
+Inicio
+    Escreva("Massa (Kg): ")
+    Leia(massa)
+    Escreva("Altura (m): ")
+    Leia(altura)
+
+    imc <- massa / (altura ^ 2)
+
+    Se (imc < 17) então
+        Escreva("Muito abaixo do peso")
+    Senao
+        Se (imc >= 17) e (imc < 18.5) entao
+            Escreva("Abaixo do peso")
+        Senao
+            Se (imc >= 18.5) e (imc < 25) entao
+                Escreva("Peso ideal")
+            Senao
+                Se (imc >= 25) e (imc < 30) entao
+                    Escreva("Sobrepeso")
+                Senao
+                    Se (imc >= 30) e (imc < 35) entao
+                        Escreva("Obesidade")
+                    Senao
+                        Se (imc >= 35) e (imc < 40) entao
+                            Escreva("Obesidade Severa")
+                        Senao
+                            Escreva("Obesidade Mórbida")
+                        FimSe
+                    FimSe 
+                FimSe
+            FimSe
+        FimSe
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Criança Esperança
+
+Algoritmo "criancaEsperanca"
+var 
+    D: Inteiro
+    valor: Real
+Inicio
+    Escreval("Muito obrigada por ajudar")
+    Escreval("[1] para doar R$10")
+    Escreval("[2] para doar R$25")
+    Escreval("[3] para doar R$50")
+    Escreval("[4] para doar outros valores")
+    Escreval("[5] para cancelar")
+    Leia(D)
+
+    Escolha D
+        Caso 1
+            valor <- 10
+        Caso 2
+            valor <- 25
+        Caso 3
+            valor <- 50
+        Caso 4
+            Escreva ("Qual o valor da doação? R$")
+            Leia(valor)
+        Caso 5
+            valor <- 0
+    FimEscolha
+
+    Escreval("Sua doação foi de R$", valor)
+    Escreval("Muito Obrigada!")
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Quantidade de dependentes de um funcionário
+
+Algoritmo "dependentes"
+var 
+    nome: Caractere
+    dependentes: Inteiro
+    salario, novo_salario: Real
+Inicio
+    Escreval("Qual o nome do funcionário? ")
+    Leia(nome)
+    Escreval("Qual o salário do funcionário? R$")
+    Leia(salario)
+    Escreval("Qual é a quantinhadade de dependentes? ")
+    Leia(dependentes)
+
+    Escolha dependentes
+        Caso 0
+            novo_salario <- salario + sal * 0.05
+        Caso 1, 2, 3
+            novo_salario <- salario + sal * 0.1
+        Caso 4, 5, 6
+            novo_salario <- salario + sal * 0.15
+        OutroCaso
+            novo_salario <- salario + sal * 0.18
+    FimEscolha 
+
+    Escreva("O novo salário de", nome, " sera de R$", novo_salario:5:2)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Aproveitamento de um aluno
+
+Algoritmo "aproveitamento"
+var 
+    N1, N2, M: Real
+    aproveitamento: Caractere
+Inicio
+    Escreval("Primeira Nota: ")
+    Leia(N1)
+    Escreval("Segunda Nota: ")
+    Leia(N2)
+
+    M <- (N1 + N2)/2
+
+    Se (M >= 9) entao
+        aproveitamento <- "A"
+    Senao
+        Se (M >= 8) e (M < 9) entao
+            aproveitamento <- "B"
+        Senao
+            Se (M >= 7) e (M < 8) entao
+                aproveitamento <- "C"
+            Senao
+                Se (M >= 6) e  (M < 7) entao
+                    aproveitamento <- "D"
+                Senao
+                    Se (M >= 5) e (M < 6) entao
+                        aproveitamento <- "E"
+                    Senao
+                        aproveitamento <- "F"
+                    FimSe
+                FimSe
+            FimSe
+        FimSe
+    FimSe
+
+    EscrevaL("Media:", M)
+    EscrevaL("Aproveitamento:", aproveitamento)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Uma partida de futebol
+
+Algoritmo "futebol"
+var 
+    bangu, madureira, diferenca: Inteiro
+    status: Caractere
+Inicio
+    Escreval("Quantos gols do Bangu? ")
+    Leia(bangu)
+    Escreval("Quantos gols do Madureira? ")
+    Leia(madureira)
+
+    Se (bangu >= madureira) entao
+        diferenca <- bangu - madureira
+    Senao
+        diferenca <- madureira - bangu
+    FimSe
+
+    Escolha diferenca
+        Caso 0
+            status <- "Empate"
+        Caso 1, 2, 3
+            satus <- "Partida Normal"
+        OutroCaso
+            status <- "Goleada"
+    FimEscolha     
+Fimalgoritmo
