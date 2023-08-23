@@ -1,0 +1,77 @@
+Comandos de Saída:
+    - Escreva("Mensagem")
+    - Escreval("Escreve e pula linha)
+
+Comandos de Entrada:
+    - Leia(variavel)
+
+Operadores Aritméricos:
+    + Adição            5 + 2 = 7
+    - Subtração         5 - 2 = 3
+    * Multiplicação     5 * 2 = 10
+    / Divisão           5 / 2 = 2.5
+    \ Divisão Inteira   5 \ 2 = 2
+    % Módulo            5 % 2 = 25
+    ^ Exponenciação     5 ^ 2 = 1
+
+    Ordem de Precedência:
+        1. ()
+        2. ^
+        3. * /
+        4. + -
+
+Funções Aritméticas:
+    Abs: Valor Absoluto             Abs(-10) = 10
+    Exp: Exponenciação              Exp(3,2) = 9
+    Int: Valor Inteiro              Int(3.9) = 3
+    RaizQ: Raiz Quadrada            RaizQ(25) = 5
+    Pi: Retorna Pi                  Pi = 3.14159
+    Sen: Seno (rad)                 Sen(0.523) = 0.5
+    Cos: Cosseno (rad)              Cos(0.523) = 0.86
+    Tan: Tangente (rad)             Tan(0.523) = 0.57
+    GraupRad: Graus pra Radiano     GraupRad(30) =  0.52
+
+Operadores Relacionais:
+    > Maior que
+    < Menor que
+    >= Maior ou igual a
+    <= Menor ou igual a
+    = Igual a
+    <> Diferente de
+
+Operadores Lógicos:
+    E (and)
+    OU (or)
+    NÃO (inversão do resultado lógico)
+
+    Ordem de Precedência:
+        1. E
+        2. OU
+        3. NÃO
+
+Ordem Geral de Precedência de Operadores:
+    1. Aritméticos
+    2. Relacionais
+    3. Lógicos
+
+Variáveis:
+var
+    identificador: tipo
+
+    Identificadores:
+        1. Deve começar com uma letras
+        2. Os próximos caracteres podem ser letras ou números
+        3. Não pode utilizar nenhum símbolo, exceto _ 
+        4. Não pode conter espaços em branco
+        5. Não pode conter letras com acentos
+        6. Não pode ser palavra reservada (ex.: Escreva, algoritmo, inicio, fimalgoritmo)
+    
+    Tipos Primitivos:
+        - Inteiro: Apenas números que não possuem parte fracionária     1  3  -5  198  0
+        - Real: Números que possuem parte fracionária (ponto)           0.5  5.0  9.8  -77.3  3.1415
+        - Caractere: Tudo que ta dentro de aspas                        "Gustavo"  "Algoritmo"  "123"
+        - Logico: verdadeiro  e  falso
+
+Atribuições:
+    msg: caractere 
+    msg <- "Olá, Mundo!"
