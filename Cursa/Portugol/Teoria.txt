@@ -108,3 +108,17 @@ Estruturas Condicionais:
             Caso valor
                 bloco D
         FimEscolha
+
+Estruturas de Repetição:
+    - Enquanto:
+        Enquanto (expressão) faca
+            bloco
+        FimEnquanto
+    - Repita:
+        Repita
+            bloco
+        Ate (expressão)
+    - Para:
+        Para variavel <- inicio ate fim [passo salto] faca
+            bloco
+        FimPara

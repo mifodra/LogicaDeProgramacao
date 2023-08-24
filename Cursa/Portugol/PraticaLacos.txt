@@ -1,0 +1,312 @@
+Contar de 0 a 10
+
+Algoritmo "contarAte10"
+var 
+    contador: Inteiro
+Inicio
+    contador <- 0
+
+    Enquanto (contador <= 10) faca
+        Escreval(contador)
+        contador <- contador + 1
+    FimEnquanto
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Contar de 10 ate 0
+
+Algoritmo "contarAte0"
+var 
+    contador: Inteiro
+Inicio
+    contador <- 10
+
+    Enquanto (contador >= 0) faca
+        Escreval(contador)
+        contador <- contador - 1
+    FimEnquanto
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Contar de 0 até onde o usuario quiser
+
+Algoritmo "contarAteNumero"
+var 
+    contador, numero: Inteiro
+Inicio
+    Escreva("Digite um número: ")
+    Leia(numero)
+    contador <- 0
+
+    Enquanto (contador <= numero) faca
+        Escreval(contador)
+        contador <- contador + 1
+    FimEnquanto
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Ler 10 números e soma-los
+
+Algoritmo "somadorNumerico"
+var 
+    contador, N, soma: Inteiro
+Inicio
+    contador <- 1
+    soma <- 0
+
+    Enquanto (contador <= 10) faca
+        Escreval("Digite o ", contador, "o. valor: ")
+        Leia(N)
+        soma <- soma + N
+        contador <- contador + 1
+    FimEnquanto
+
+    Escreva("A soma de todos os valores foi", soma)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Ler 10 números e soma-los + mostrar qual foi o maior número digitado
+
+Algoritmo "somadorNumerico"
+var 
+    contador, N, soma, maior: Inteiro
+Inicio
+    contador <- 1
+    soma <- 0
+
+    Enquanto (contador <= 10) faca
+        Escreval("Digite o ", contador, "o. valor: ")
+        Leia(N)
+        Se (N > maior) entao
+            maior <- N
+        FimSe
+        soma <- soma + N
+        contador <- contador + 1
+    FimEnquanto
+
+    Escreval("A soma de todos os valores foi", soma)
+    Escreval("O maior valor digitado foi", maior)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Fazer a conversao de moedas 4x + Perguntar ao usuário quantas conversões serão realizadas
+
+Algoritmo "dolar"
+var 
+    reais, dolares: Real
+    contador, quantidade: Inteiro
+Inicio
+    contador <- 1
+
+    Escreva("Quantas conversões você quer fazer? ")
+    Leia(quantidade)
+
+    Enquanto (contador <= quantidade) faca
+        Escreva("Quantos Reais eu tenho? R$")
+        Leia(reais)
+        dolares <- reais / 4.94
+        Escreva("Posso ter US$", dolares:5:2)
+        contador <- contador + 1
+    FimEnquanto
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Contagem Inteligente
+
+Algoritmo "contagemInteligente"
+var 
+    N1, N2: Inteiro
+Inicio
+    Escreva("Início: ")
+    Leia(N1)
+    Escreva("Fim: ")
+    Leia(N2)
+
+    Se (N1 > N2) entao
+        Enquanto (N1 > N2) faca
+            Escreva(N1, "...")
+            N1 <- N1 - 1
+        FimEnquanto
+    Senao
+        Enquanto (N1 < N2) faca
+            Escreva(N1, "...")
+            N1 <- N1 + 1
+        FimEnquanto
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Melhor aluno da turma
+
+Algoritmo "melhorAluno"
+var 
+    alunos, contador: Inteiro
+    nota, maior_nota: Real
+    nome, melhor_aluno: Caractere
+Inicio
+    contador <- 1
+
+    Escreva("Quantos alunos a turma tem? ")
+    Leia(alunos)
+
+    Enquanto (contador <= alunos) faca
+        Escreval("ALUNO", contador)
+        Escreval("Nome do aluno: ")
+        Leia(nome)
+        Escreva("Nota de", nome, ":")
+        Leia(nota)
+        Se (nota > maior_nota) entao
+            melhor_aluno <- nome
+            maior_nota <- nota
+        FimSe
+        contador <- contador + 1
+    FimEnquanto
+
+    Escreva("O melhor aproveitamento foi de", melhor_aluno, "com a nota", maior_nota)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Contar de 1 até 10 + exibir a tabuada de um número qualquer
+
+Algoritmo "conta1a10"
+var 
+    contador, N, R: Inteiro
+Inicio
+    contador <- 1
+    N <- 7
+    Repita
+        R <- N * contador
+        Escreva(N, " *", contador, " =", R)
+        contador <- contador + 1
+    Ate (contador > 10)
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Quantos número são negativos?
+
+Algoritmo "contaNegativos"
+var 
+    contador, N, total_negativos: Inteiro
+Inicio
+    contador <- 1
+    total_negativos <- 0
+
+    Repita
+        Escreva("Digite um numero: ")
+        Leia(N)
+        Se (N < 0) entao
+            total_negativos <- total_negativos + 1
+        FimSe
+        contador <- contador + 1
+    Ate (contador > 5)
+
+    Escreva("Foram digitados", total_negativos, " valores negativos.")
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Fatorial de um número
+
+Algoritmo "fatorial"
+var 
+    N, fatorial: Inteiro
+Inicio
+    Escreva("Digite um número: ")
+    Leia(N)
+    fatorial <- N
+
+    Repita
+        fatorial <- fatorial * (N - 1)
+        N <- N - 1
+    Ate (N < 1)
+
+    Escreva(fatorial)
+Fimalgoritmo
+
+
+----------------------------------------------------------------------------
+Número primo
+
+Algoritmo "numeroPrimo"
+var 
+    contador, numero, ContDiv: Inteiro
+Inicio
+    contador <- 1
+    Escreva("Digite um número: ")
+
+    Repita
+        Escreva(contador)
+        Se (numero % contador = 0) entao
+            ContDiv <- ContDiv + 1
+        FimSe
+        contador <- contador + 1
+    Ate (contador > numero)
+
+    Se (ContDiv > 2) entao
+        Escreva("O valor", numero, " não é primo")
+    Senao
+        Escreva("O valor", numero, " é primo")
+    FimSe
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+----------------------------------------------------------------------------
+Contar de 1 até 10
+
+Algoritmo "contador1a10"
+var 
+    contador: inteiro
+Inicio
+    Para contador <- 1 ate 10 faca
+        Escreva(contador)
+    FimPara
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Número pares
+
+Algoritmo "valoresPares"
+var 
+    contador, valor: inteiro
+Inicio
+    Escreva("Digite um valor: ")
+    Leia(valor)
+    Para contador <- 0 ate valor passo 2 faca
+        Escreva(contador)
+    FimPara
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Número pares (contagem regressiva)
+
+Algoritmo "valoresPares"
+var 
+    contador, valor: inteiro
+Inicio
+    Escreva("Digite um valor: ")
+    Leia(valor)
+    Se (valor % 2 = 1) entao
+        valor <- valor - 1
+    FimSe
+    Para contador <- valor ate 0 passo -2 faca
+        Escreva(contador)
+    FimPara
+Fimalgoritmo
+
+----------------------------------------------------------------------------
+Quantos valores estão entre 0 e 10
+
+Algoritmo "valoresEntre0e10"
+var 
+    contador, valor, tot010: inteiro
+Inicio
+    Para contador <- 1 ate 6 faca
+        Escreva("Digite um valor: ")
+        Leia(valor)
+        Se (valor >= 0) e (valor <= 10) faca
+            tot010 <- tot010 + 1
+        FimSe
+    FimPara
+
+    Escreva("Ao todo foram", tot010, " valores entre 0 e 10")
+Fimalgoritmo
